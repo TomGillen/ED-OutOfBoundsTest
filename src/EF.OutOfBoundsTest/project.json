@@ -3,13 +3,12 @@
   "version": "1.0.0-*",
 
   "dependencies": {
-    "EntityFramework.InMemory": "7.0.0-beta7",
-    "Microsoft.AspNet.Server.IIS": "1.0.0-beta7",
-    "Microsoft.AspNet.Server.WebListener": "1.0.0-beta7"
+    "EntityFramework.InMemory": "7.0.0-beta8",
+    "Microsoft.AspNet.Server.Kestrel": "1.0.0-beta8"
   },
 
   "commands": {
-    "web": "Microsoft.AspNet.Hosting --config hosting.ini",
+    "web": "Microsoft.AspNet.Server.Kestrel",
     "ef": "EntityFramework.Commands"
   },
 

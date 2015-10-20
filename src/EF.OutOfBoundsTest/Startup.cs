@@ -29,6 +29,13 @@ namespace EF.OutOfBoundsTest
     public class DatabaseContext : DbContext
     {
         public DbSet<A> A { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<A>();
+            modelBuilder.Entity<B>();
+            modelBuilder.Entity<C>();
+        }
     }
 
     public abstract class A
